@@ -1,0 +1,138 @@
+body{
+    background-color: blanchedalmond;
+    font-size: 1rem;
+}
+
+.ListItems{
+    width: 46%;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    box-shadow: 0px 2px 18px white,0px 3px 12px rgb(160, 160, 160), 0px 4px 5px rgb(102, 102, 102);
+}
+
+.ListItems:hover{
+    box-shadow: 0px 2px 20px white,0px 3px 14px rgb(160, 160, 160), 0px 4px 10px rgb(102, 102, 102);
+}
+
+.heading{
+    cursor: default;
+    padding: 0px;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif; 
+    letter-spacing: 3px;
+    text-shadow: 0px -2px 2px white,0px 2px 2px white,0px 3px 3px rgb(216, 216, 216),
+                 0px 4px 4px rgb(105, 105, 105), 0px 5px 5px slateblue;
+    color: darkslateblue;
+}
+
+.heading:hover{
+    text-shadow: 0px -2px 2px white,0px 2px 2px white,0px 3px 3px rgb(216, 216, 216),
+                 0px 4px 4px rgb(168, 168, 168), 0px 5px 5px rgb(126, 125, 125), 0px 6px 6px slateblue;
+}
+
+
+.Value{
+    max-width: 80%;
+    min-width: 40%;
+    height: 4vh;
+    box-sizing: border-box;
+    border:unset;
+    box-shadow: 0px 2px 5px white, 0px 3px 6px rgb(150, 127, 92);
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 0px 1px 3px rgb(221, 220, 220),0px 1px 3px rgb(172, 172, 172), 0px -1px 3px rgb(221, 220, 220);
+}
+
+.AddBtn{
+    height: 4.3vh;
+    width: 6vw;
+    min-width: 4vw;
+    border-radius: 0.1em;
+    border-color: blanchedalmond;
+    background-color: rgb(255, 203, 126);
+    box-shadow: 2px solid rgb(233, 230, 89) ;
+    color: white;
+    text-shadow: 0px 1px 2px black, 0px -1px 2px black;
+    font-size: 1.1em;
+    box-shadow: 0px 2px 5px white, 0px 3px 6px rgb(150, 127, 92);
+}
+
+.AddBtn:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        font-size: 15px;
+    }
+    .ListItems{
+        width: 64%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 12px;
+    }
+    .ListItems{
+        width: 76%;
+    }
+    .AddBtn{
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body{
+        font-size: 10px;
+    }
+    .ListItems{
+        width: 88%;
+    }
+}
+
+.list, tr, td{
+    border-collapse: collapse;
+    margin: 4% auto;
+    font-size: 1.1em;
+}
+
+.list  td{
+    height: 6vh;
+    width: 50vw;
+}
+
+.DeleteItem,.EditItem{
+    box-shadow:  0px -2px 2px white,
+                 0px 2px 2px white, 0px 3px 3px gray,0px 4px 4px rgb(75, 75, 75),0px 5px 4px wheat;
+    font-size: .8em;
+    text-shadow: 0px 2px 3px black, 0px 3px 4px white;
+    margin: 0 20px;
+    /* border-radius: 10%; */
+    background-color: gray;
+    color: whitesmoke;
+    border: unset;
+}
+
+.DeleteItem{
+    border-top-left-radius: 14% ;
+    border-bottom-left-radius: 14%;
+}
+
+.EditItem{
+    margin-left: -20px;
+    border-top-right-radius: 14% ;
+    border-bottom-right-radius: 14%;
+}
+
+.DeleteItem:hover,.EditItem:hover{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    text-shadow: 0px 2px 3px black, 0px 3px 4px white;
+    box-shadow:  0px -2px 2px white, 0px 3px 3px gray,0px 4px 4px rgb(75, 75, 75);
+}
